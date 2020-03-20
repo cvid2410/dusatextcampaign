@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+import django_heroku
+
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -137,3 +139,6 @@ SMS_BROADCAST_TO_NUMBERS = [
     "+17189028757", # use the format +19735551234
     "+19173885380"
 ]
+
+django_heroku.settings(locals())
+
