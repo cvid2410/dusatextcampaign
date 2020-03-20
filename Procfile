@@ -1,1 +1,1 @@
-web: gunicorn dusacampaign.wsgi
+web: gunicorn --pythonpath dusacampaign dusacampaign.wsgi
