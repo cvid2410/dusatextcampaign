@@ -1,1 +1,1 @@
-web: gunicorn --pythonpath dusacampaign dusacampaign.wsgi
+web: gunicorn dusacampaign.wsgi --log-file -
